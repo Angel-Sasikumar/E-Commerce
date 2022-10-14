@@ -1,0 +1,62 @@
+<body>
+      
+    <div class="container">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <h1 style="color:brown"><img src="https://assets.materialup.com/uploads/2f3c7fdc-5963-4e5f-8416-83e8e932e5bd/preview.jpg" width="40px" height="40px" style="border-radius:50%">
+            Angel's Glow</h1>
+             <div class="d-flex">
+                <button type="button" class="btn" routerLink="/vendorlogin">Vendor Login</button>
+                <button type="button" class="btn" routerLink="/admin">Admin</button>
+                <button type="button" class="btn" routerLink="/userlogin">Login</button>
+          </div>
+        </div>
+    </nav>
+
+  
+  <div id="grid">
+    <div class="slide">
+      <div class="eat">
+
+
+        <img src="https://assets.materialup.com/uploads/2f3c7fdc-5963-4e5f-8416-83e8e932e5bd/preview.jpg" width="303px" height="303px" 
+        style="border-radius:50%; padding: 40px; margin: 40px;">
+
+           </div></div>
+        <div class="row">
+            
+                <div class="card">
+                    <div class="text-center">
+                        <h1>Vendor Login</h1>
+                        <h3>
+                            Please Enter Your Email & Password..!!
+                        </h3>
+                    </div>
+                        <form [formGroup]="vendorlogin"  (ngSubmit)="login()">
+                           
+                              
+                                <mat-form-field appearance="fill">
+                                <mat-label >Email Id</mat-label>
+                                <input matInput type="email">
+                                </mat-form-field>
+                            
+                                <mat-form-field appearance="fill">
+                                <mat-label >Password</mat-label>
+                                <input matInput type="Password">
+                                </mat-form-field>
+                           
+                              
+                            <div class="footer">
+
+                              <button type="submit" class="btn">Login</button><br><br>
+                              Be a Partner with <b>Angel's Glow..!!</b><br><br>
+
+                              Keep in Touch with us on admin@angelsglow.com 
+        
+                            </div>  
+                       </form> 
+              </div>
+        </div>
+    </div>
+</div>
+</body>

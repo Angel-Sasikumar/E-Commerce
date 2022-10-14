@@ -1,0 +1,138 @@
+<mat-toolbar class="mat-elevation-z8">
+  
+  
+    <img src="https://assets.materialup.com/uploads/2f3c7fdc-5963-4e5f-8416-83e8e932e5bd/preview.jpg" width="40px" height="40px" style="border-radius: 50%">
+    <h4 >Angel's Glow</h4>
+    
+    
+    <input type="search"  style="border-radius: 10px" placeholder="Search" [(ngModel)]="searchTerm" (keyup)="Search($event)"><i class="fa-solid fa-magnifying-glass"></i>
+    
+    <div class="d-flex">
+           <button class="nav-item"  data-bs-toggle="modal" routerLink="/cart" data-bs-target="#exampleModal3" >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div style="font-size: 10px; padding: 3px; margin: 0;" class="btn btn-danger">{{totalItem}}</div>
+            Cart..</button>
+          <button class="nav-link"  data-bs-toggle="modal" routerLink=""><i class="fa-solid fa-arrow-right-from-bracket"></i></button>  
+      </div>
+</mat-toolbar>
+
+<nav class="navbar">
+    <div class="container">
+    <div class="item">
+        <a (click)="filter('')">
+            <h2>All products</h2>
+        </a>
+    </div>
+
+    <div class="item"> 
+        <div class="dropdown">
+            <h2 >Lakme <i class="fa-solid fa-angle-down"></i></h2>
+            <div class="dropdown-content">
+            <p (click)="filter('lfoundation')">Foundation</p>
+            <p (click)="filter('lcompact')">Compact</p>
+            <p (click)="filter('leyeproduct')">EyeProducts</p>
+            <p (click)="filter('llipstick')">Lipstick</p>
+            <p (click)="filter('lfacewash')">FaceWash</p>
+            <p (click)="filter('lfacemask')">FaceMask</p>
+            </div>
+          </div>
+        </div>
+    
+     <div class="item">
+        <div class="dropdown">
+            <h2>Elle 18 <i class="fa-solid fa-angle-down"></i></h2>
+            <div class="dropdown-content">
+            <p (click)="filter('efoundation')">Foundation</p>
+            <p (click)="filter('ecompact')">Compact</p>
+            <p (click)="filter('eeyeproduct')">EyeProducts</p>
+            <p (click)="filter('elipstick')">Lipstick</p>
+            <p (click)="filter('epolish')">Nailpolish</p>
+            </div>
+          </div>
+        </div>    
+    
+    <div class="item"> 
+        <div class="dropdown">
+            <h2 >Eyetex <i class="fa-solid fa-angle-down"></i></h2>
+            <div class="dropdown-content">
+                <p (click)="filter('xfoundation')">Foundation</p>
+                <p (click)="filter('xcompact')">Compact</p>
+                <p (click)="filter('xeyeproduct')">EyeProducts</p>
+                <p (click)="filter('xlipstick')">Lipstick</p>
+                <p (click)="filter('xpolish')">Nailpolish</p>
+                </div>
+          </div>
+        </div>
+    
+    <div class="item"> 
+        <div class="dropdown">
+            <h2 >Maybelline <i class="fa-solid fa-angle-down"></i></h2>
+            <div class="dropdown-content">
+                <p (click)="filter('yfoundation')">Foundation</p>
+                <p (click)="filter('ycompact')">Compact</p>
+                <p (click)="filter('yeyeproduct')">EyeProducts</p>
+                <p (click)="filter('ylipstick')">Lipstick</p>
+                <p (click)="filter('yfacewash')">FaceWash</p>
+                <p (click)="filter('yfacemask')">FaceMask</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="item"> 
+        <div class="dropdown">
+            <h2 >Mama Earth <i class="fa-solid fa-angle-down"></i></h2>
+            <div class="dropdown-content">
+            <p (click)="filter('zfoundation')">Foundation</p>
+            <p (click)="filter('zcompact')">Compact</p>
+            <p (click)="filter('zeyeproduct')">EyeProducts</p>
+            <p (click)="filter('zlipstick')">Lipstick</p>
+            <p (click)="filter('zfacewash')">FaceWash</p>
+            <p (click)="filter('zfacemask')">FaceMask</p>
+            </div>
+           </div>
+        </div>
+    
+    <div class="item"> 
+        <div class="dropdown">
+            <h2 >Ponds<i class="fa-solid fa-angle-down"></i></h2>
+            <div class="dropdown-content">
+            <p (click)="filter('pfoundation')">Foundation</p>
+            <p (click)="filter('pcompact')">Compact</p>
+            <p (click)="filter('peyeproduct')">EyeProducts</p>
+            <p (click)="filter('plipstick')">Lipstick</p>
+            <p (click)="filter('pfacewash')">FaceWash</p>
+            <p (click)="filter('pfacemask')">FaceMask</p>
+            </div>
+         </div>
+        </div>
+
+</div>
+</nav>
+
+
+<!--slider-->
+<div id="slider">
+    <figure>
+      <img src="https://ik.imagekit.io/hng/banners/Desktop_9786_1659607569844.jpg" height="250px" >
+      <img src="https://ik.imagekit.io/hng/banners/Desktop_9787_1661170576978.jpg" height="250px" >
+      <img src="https://ik.imagekit.io/hng/banners/Desktop_9793_1659006428983.jpg" height="250px">
+      <img src="https://ik.imagekit.io/hng/banners/Desktop_9788_1659006389305.jpg" height="250px" >
+      <img src="https://ik.imagekit.io/hng/banners/Desktop_9791_1659006408583.jpg" height="250px">
+  
+  </figure>
+    
+
+<div class="img" style="display: inline-block;"><br>
+<img src="https://cdn.shopify.com/s/files/1/0014/3514/0183/files/nile_sale_page_banner_1440x.jpg?v=1658295515" width="50%">
+<img src="https://cdn.shopify.com/s/files/1/0014/3514/0183/files/1169x511_sale_offer_banner_1440x.png?v=1623748317" width="50%">
+</div>  
+
+<div class="vegetables">
+<div id="abc"  *ngFor= "let item of filterCategory | filter:searchKey:'name'">
+    <img src={{item.image}} width="220px" height="180px"><br>
+    <h2>{{item.name}}</h2><br>
+    <h4><b>M.R.P  Rs.{{item.price}}/-</b></h4>
+    <button class="btn btn-primary" (click)=addtocart(item)>Add to Cart<i class="fa-solid fa-plus"></i></button>
+      
+</div>
+</div>

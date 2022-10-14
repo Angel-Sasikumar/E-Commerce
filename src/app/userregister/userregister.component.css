@@ -1,0 +1,32 @@
+.card{
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: beige;
+    color: brown;
+}
+.card h1,h6{
+    color: brown;
+}
+label{
+    color: brown;
+}
+a{ 
+    color: brown;
+    margin-top: 10px;
+}
+mat-label,form{
+    color: brown;
+}
+mat-form-field{
+    width: 100%;
+}
+.btn
+{
+    background-color: brown;
+    color: white;
+}
